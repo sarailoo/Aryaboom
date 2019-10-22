@@ -1,0 +1,11 @@
+[class*='col-'] {
+    float: right;
+    min-height: 1px; 
+    margin-left: 0;
+    margin-right: 0;
+}
+
+[class*='col-']:last-child {   
+}
+
+.stuck [class*='col-'] {margin:0; }
