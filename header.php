@@ -49,16 +49,6 @@
 					<form method="get" action="<?php bloginfo('url'); ?>">
 <fieldset>
 <input type="text" name="s" value="" placeholder="search&hellip;" maxlength="50" required="required" />
-<select name="category_name">
-<?php
-// generate list of categories
-$categories = get_categories();
-foreach ($categories as $category) {
-	echo '<option value="', $category->slug, '">', $category->name, "</option>\n";
-}
-?>
-</select>
-<button type="submit">Search</button>
 </fieldset>
 </form>
 					
